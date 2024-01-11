@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link rel="stylesheet" href="./assets/styles.css">
+
+</head>
+
+<body>
+    <main>
+        <div class="content nav-bar d-flex justify-content-center ">
+            <nav>
+
+                <ul class="navbar-nav nav-top">
+                    <li class="nav-item my-3">
+                        <img src="./assets/images/butterfly.png" alt="" height="50">
+                    </li>
+                    <li class="nav-item my-3">
+                        <span class="material-symbols-outlined nav-icon" style="color: rgb(130, 130, 134);">
+                            search
+                        </span>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav nav-middle">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">
+                            <span class="material-symbols-outlined nav-icon active">
+                                home
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-4 mt-4">
+                        <a class="nav-link" href="#">
+                            <span class="material-symbols-outlined nav-icon">
+                                problem
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-4">
+                        <a class="nav-link" href="#">
+                            <span class="material-symbols-outlined nav-icon">
+                                list_alt
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="material-symbols-outlined nav-icon">
+                                person
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav nav-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="material-symbols-outlined nav-icon">
+                                notifications_unread
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="material-symbols-outlined nav-icon">
+                                logout
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+      
+        </div>
+        <div class="content">
+            <div class="hero-section">
+                <div class="top pt-5 d-flex  justify-content-md-start justify-content-lg-start justify-content-sm-start align-items-center">
+                    <div class="img profile-img mx-sm-4 mx-xs-4 mx-md-4 mx-lg-4"></div>
+                    <div>
+                        <h3>Hi Shashi,</h3>
+                        <h6>welcome back.</h6>
+                    </div>
+                </div>
+                <div class="middle p-5">
+                    <div>
+                        <h4>Today</h4>
+                        <h1>$19,892</h1>
+                        <p>Account balance</p>
+                    </div>
+                    <div>
+                        <h4 class="bold text-dark">$4000</h4>
+                        <p>Year to date contribution</p>
+                    </div>
+                    <div>
+                        <h4 class="bold text-dark">$1892</h4>
+                        <p>Total Interest</p>
+                    </div>
+                    <button class="btn btn-primary px-3 py-2">I want to</button>
+                </div>
+                <div class="bottom p-5">
+                    
+                    <div class="mb-2">
+                        <h3>Recent Transactions</h3>
+                    </div>
+
+                    <div class="mt-5 border-bottom">
+                        <h6 class="text-muted">2020-08-07</h6>
+                        <p style="font-size: 1.05rem; font-weight: 900;">Withdrawal Transfer to BankXXX11</p>
+                    </div>
+                    <div class="mt-5 border-bottom">
+                        <h6 class="text-muted">2020-07-21</h6>
+                        <p style="font-size: 1.05rem; font-weight: 900;">Withdrawal Transfer to BankXXX11</p>
+                    </div>
+                    <div class="mt-5 border-bottom">
+                        <h6 class="text-muted">2020-07-16</h6>
+                        <p style="font-size: 1.05rem; font-weight: 900;">Withdrawal Transfer to BankXXX11</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row"> 
+            <div class="content p-5 col-lg-8 col-sm-12 col-md-12">
+                <h4 style="color: var(--color-violet);">Retirement Income</h4>
+                <h2>Starting Year 2056</h2>
+                <div class="row mt-5 ">
+                    <div class="col-lg-4 col-md-6 mb-2">
+                      <div class="border-bottom p-1">
+                        <h2>$300,0000</h2>
+                        <p class="text-muted">My Goal</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-2">
+                      <div class="border-bottom p-1">
+                        <h2>59%</h2>
+                        <p class="text-muted">Goal Achieved</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-2">
+                      <div class="border-bottom p-1">
+                        <h2>$300</h2>
+                        <p class="text-muted">Est Montly Income</p>
+                      </div>
+    
+                    </div>
+                </div>
+    
+                <div class="row mt-5 ">
+                  <h4>Contribution Overtime</h4>
+                  <canvas id="myChart"></canvas>
+                </div>
+    
+                
+                <div class="row mt-5 ">
+                    <h5 class="text-dark">How Do I compare my peers</h5>
+                    <p class="text-muted">These numbers represent current goal achivement</p>
+
+                    <div class="row mt-3 col-lg-4  col-md-12 col-sm-12"> 
+                        <span class="border-bottom mb-1 pb-3 mb-sm-4"><b>Age:</b>&nbsp;Under 30 ▾</span>
+                        <span class="border-bottom mb-1  pb-3 mb-sm-4"><b>Salary:</b>&nbsp;K 20 - K 30 ▾</span>
+                        <span class="pb-3"><b>Gender:</b>&nbsp;Male ▾</span>
+                    </div>
+                    <div class="row circular-charts-div mt-3 col-lg-8  col-md-12 col-sm-12">
+                        <div class="col-sm-4" id="circularchart1"></div>
+                        <div class="col-sm-4" id="circularchart2"></div>
+                        <div  class="col-sm-4" id="circularchart3"></div>
+                    </div>
+                  </div>
+            </div>
+            <div class="content p-5 right-sidebar mb-5 col-lg-4 col-md-12 col-sm-12">
+                <div class="card card-right ps-4 pe-4 pt-4" style="border: none;">
+                    <h5 class="text-dark mb-4">Retirement Strategy</h5>
+                    <h6 class="mb-4"><b>Employee Contribution</b></h6>
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <input type="range" class="form-range me-2"" name="" id=""/>
+                        <button class="card px-3">12%</button>
+                    </div>
+                    <h6 class="mb-4"><b>Retirement Age</b></h6>
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <input type="range" class="form-range me-2" name="" id=""/>
+                        <button class="card px-3">65</button>
+                    </div>
+                    <hr class="text-muted">
+
+                    <h6 class="mb-4 d-flex justify-content-between"><b>Employee Contribution</b><p>8.4%</p></h6>
+                    <h6 class="mb-4 d-flex justify-content-between"><b>Intetrest Rate</b><p>5%</p></h6>
+
+                    <button class="btn btn-primary">Update</button>
+                    <span class="text-center mb-4 mt-4 text-active" >View Helo Docs ></span>
+                </div>
+                <div class="card ps-3 mt-3 " style="border: none;border-left: 3px solid var(--color-violet);">
+                    Are You considering a <b>Housing Advance?</b>
+                    <p class="text-muted">Limited time reduced interest</p>
+                    <span class="text-active">Learn More ></span>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-nav justify-content-center align-items-center">
+            <ul class="nav-middle">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">
+                        <span class="material-symbols-outlined nav-icon active2">
+                            home
+                        </span>
+                    </a>
+                </li>
+    
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">
+                        <span class="material-symbols-outlined nav-icon">
+                            problem
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">
+                        <span class="material-symbols-outlined nav-icon">
+                            list_alt
+                        </span>
+                    </a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span class="material-symbols-outlined nav-icon">
+                            person
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+  
+    <script src="./assets/graph.js"></script>
+</body>
+
+</html>
